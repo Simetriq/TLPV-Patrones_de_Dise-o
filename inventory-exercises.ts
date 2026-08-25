@@ -4,7 +4,6 @@ interface equipo {
     estado: string;
 }
 
-
 class Inventario {
     private lista: equipo[] = [];
     private static instancia: Inventario;
