@@ -68,9 +68,7 @@ class Singleton {
 
 // Calcular el total procesado
 
-const registro = RegistroPagos.obtenerInstancia();
-const paypal = new PayPal();
-const stripe = new Stripe();
+
 
 // Crear pagos y procesarlos con diferentes proveedores
 // Registrar los pagos en el sistema
