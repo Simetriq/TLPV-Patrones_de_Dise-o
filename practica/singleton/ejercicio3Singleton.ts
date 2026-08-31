@@ -28,12 +28,6 @@ class SesionUsuario {
 
 
 
-
-
-
-
-
-
 // Crea una clase SesionUsuario que siga el patrón Singleton.
 
 // Debe tener propiedades privadas para:
