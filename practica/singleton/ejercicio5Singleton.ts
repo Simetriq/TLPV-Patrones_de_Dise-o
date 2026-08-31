@@ -1,4 +1,20 @@
+class PoolConexionesDB {
 
+    private static instancia: PoolConexionesDB;
+
+    private constructor(){}
+
+    static obtenerInstancia(): PoolConexionesDB {
+        if(!PoolConexionesDB.instancia){
+            PoolConexionesDB.instancia = new PoolConexionesDB();
+        }
+        return PoolConexionesDB.instancia;
+    }
+
+    conectar(): string {
+        return "Conectado a PostgreSQL";
+    }
+}
 
 // Ejercicio 2: Patrón Singleton (Creacional)
 // Contexto:
@@ -21,6 +37,7 @@
 
 // TypeScript
 //? Ejemplo de uso esperado:
+
 const poolVentas = PoolConexionesDB.obtenerInstancia();
 const poolAuth = PoolConexionesDB.obtenerInstancia();
 
