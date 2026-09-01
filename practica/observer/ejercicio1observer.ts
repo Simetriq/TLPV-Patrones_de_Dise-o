@@ -27,7 +27,7 @@ class EstacionClima {
 }
 
 class PantallaActual implements Observador {
-    actualizar(datos: number): void {
+    actualizar(temperatura: number): void {
         console.log(`Pantalla: La temperatura actual es ${temperatura}°C`)
     }
 }
