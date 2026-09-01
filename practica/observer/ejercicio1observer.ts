@@ -35,7 +35,7 @@ class PantallaActual implements Observador {
 class AlertaTemperatura implements Observador {
     actualizar(temperatura: number): void {
         if (temperatura > 30) {
-            console.log(`⚠️ ALERTA: Temperatura muy alta (${temperatura}°C)`);
+            console.log(`ALERTA: Temperatura muy alta (${temperatura}°C)`);
         }
     }
 }
